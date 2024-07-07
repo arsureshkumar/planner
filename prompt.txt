@@ -1,0 +1,29 @@
+What follows will be a course description from the University of California at San Diego.
+I need you to extract some data from it in the following schema:
+{
+    number: string,
+    name: string,
+    description: string,
+    prerequisites: [string]
+}
+
+For example, take the following input:
+
+CSE 100. Advanced Data Structures (4)
+High-performance data structures and supporting algorithms.
+Use and implementation of data structures like (un)balanced trees,
+graphs, priority queues, and hash tables. Also, memory management,
+pointers, recursion. Theoretical and practical performance analysis,
+both average case and amortized. Uses C++ and STL.
+Recommended preparation: background in C or C++ programming.
+Prerequisites: CSE 21 or MATH 154 or MATH 158 or MATH 184 or MATH 188 and CSE 12 and CSE 15L and CSE 30 or ECE 15;
+restricted to undergraduates.
+Graduate students will be allowed as space permits.
+Students may not receive credit for both CSE 100R and CSE 100.
+
+The correct output in this case is:
+
+{
+    number: "CSE 100"
+    name: "Advanced Data Structures"
+}
